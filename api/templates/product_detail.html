@@ -1,0 +1,6 @@
+<h2>{{ product.name }}</h2>
+<p>Price: ${{ product.price }}</p>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Purchase</button>
+</form>

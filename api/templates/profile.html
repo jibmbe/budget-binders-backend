@@ -1,0 +1,11 @@
+<h1>Welcome, {{ user.username }}!</h1>
+<p>Email: {{ user.email }}</p>
+<p>Phone Number: {{ user.phone_number }}</p>
+<p>Address: {{ user.address }}</p>
+
+<h2>Your Purchase History</h2>
+<ul>
+    {% for purchase in purchases %}
+        <li>{{ purchase.product.name }} (Quantity: {{ purchase.quantity }})</li>
+    {% endfor %}
+</ul>
